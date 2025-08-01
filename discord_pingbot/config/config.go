@@ -31,7 +31,7 @@ func ReadConfig() error {
 	fmt.Println(string(file))
 
 	err = json.Unmarshal(file, &config)
-	//always pass reference in unmarshal
+	//always pass reference in unmarshalling
 
 	if err != nil {
 		fmt.Println(err.Error())
